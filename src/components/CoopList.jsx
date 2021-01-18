@@ -58,8 +58,8 @@ const Image = styled.div`
 
 const Information = styled.div`
   h1 {
-    font-size: 2rem;
-    display: inline-block;
+    font-size: 4vw;
+    display: inline;
     color: ${props => props.theme.colors.black.base};
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
