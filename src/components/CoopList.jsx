@@ -7,7 +7,7 @@ import { TagsBlock } from 'components';
 import { Container } from 'layouts';
 
 const Wrapper = styled.article`
-  margin: 0 3rem;
+  margin: 0 2rem;
 `;
 
 const Image = styled.div`
@@ -58,7 +58,7 @@ const Image = styled.div`
 
 const Information = styled.div`
   h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     display: inline;
     color: ${props => props.theme.colors.black.base};
     transition: all ${props => props.theme.transitions.default.duration};
