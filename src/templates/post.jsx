@@ -15,9 +15,9 @@ const SuggestionBar = styled.div`
   box-shadow: ${props => props.theme.shadow.suggestion};
 `;
 const PostSuggestion = styled.div`
-  display: flex;
+  display: block;
   align-items: center;
-  margin: 1rem 3rem 0 3rem;
+  margin: 1rem 2rem 0 2rem;
 `;
 
 const Post = ({ data, pageContext }) => {
@@ -44,16 +44,16 @@ const Post = ({ data, pageContext }) => {
         <PostSuggestion>
           {prev && (
             <Link to={prev.frontmatter.path} style={{ color: 'grey'}}>
-              Previous
-              <h3>{prev.frontmatter.title}</h3>
+              <h3>Back</h3>
+
             </Link>
           )}
         </PostSuggestion>
         <PostSuggestion>
           {next && (
             <Link to={next.frontmatter.path} style={{ color: 'grey' }}>
-              Next
-              <h3>{next.frontmatter.title}</h3>
+              <h3>Next</h3>
+
             </Link>
           )}
         </PostSuggestion>
