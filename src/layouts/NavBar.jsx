@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 import logo from '../../static/logo/header-logo.png';
-import MediaQuery from 'react-responsive';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -34,13 +33,11 @@ const NavBar = () => (
     <StyledLink to="/">
       <img src={logo} alt="AK Coops Logo"/>
     </StyledLink>
-    <MediaQuery query= {{maxwidth: 480}}>
-      {matches => <Nav>
-        <Link to="/">Home</Link>
-        <Link to="/coop">Coops</Link>
-        <Link to="/about">About</Link>
-      </Nav>}
-    </MediaQuery>
+    <Nav>
+      <Link to="/">Home</Link>
+      <Link to="/coop">Coops</Link>
+      <Link to="/about">About</Link>
+    </Nav>
   </Headroom>
 );
 
