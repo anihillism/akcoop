@@ -105,14 +105,13 @@ const Title = styled.h2`
   margin-bottom: 0.6rem;
 `;
 
-const PostList = ({ cover, path, date, title, excerpt }) => (
+const PostList = ({ cover, path, title, excerpt }) => (
   <Wrapper>
     <Image>
       <Img fluid={cover} />
     </Image>
     <StyledLink to={path}>
       <Info>
-        <span>{date}</span>
         <Title>{title}</Title>
         <span>{excerpt}</span>
       </Info>

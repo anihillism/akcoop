@@ -42,16 +42,16 @@ const Post = ({ data, pageContext }) => {
       </Container>
       <SuggestionBar>
         <PostSuggestion>
-          {prev && (
-            <Link to={prev.frontmatter.path} style={{ color: 'grey'}}>
+          {next && (
+            <Link to={next.frontmatter.path} style={{ color: 'grey'}}>
               <h3>Back</h3>
 
             </Link>
           )}
         </PostSuggestion>
         <PostSuggestion>
-          {next && (
-            <Link to={next.frontmatter.path} style={{ color: 'grey' }}>
+          {prev && (
+            <Link to={prev.frontmatter.path} style={{ color: 'grey' }}>
               <h3>Next</h3>
 
             </Link>

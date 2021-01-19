@@ -12,6 +12,7 @@ const Wrapper = styled.article`
 
 const Image = styled.div`
   margin: auto;
+  margin-bottom: 1.5rem;
   position: relative;
   box-shadow: ${props => props.theme.shadow.feature.small.default};
   transition: ${props => props.theme.transitions.boom.transition};
@@ -53,11 +54,12 @@ const Image = styled.div`
   }
   @media (max-width: 500px) {
     min-height: 200px;
+    margin-bottom: 1.5rem;
   }
 `;
 
 const Information = styled.div`
-  h1 {
+  h3 {
     display: inline;
     color: ${props => props.theme.colors.black.base};
     transition: all ${props => props.theme.transitions.default.duration};
@@ -74,21 +76,19 @@ const Information = styled.div`
     max-width: 100%;
     width: 100%;
   }
-  @media (max-width: 480) {
-    font-size: 1.5rem;
+  @media (max-width: 480px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
   }
 `;
 
-const Date = styled.div`
-  margin-top: 1rem;
-  color: ${props => props.theme.colors.black.lighter};
-`;
 
-const Title = styled.h1`
+const Title = styled.h3`
   margin: 0;
 `;
 
-const CoopList = ({ path, cover, title, date, excerpt, tags }) => (
+const CoopList = ({ path, cover, title, excerpt }) => (
   <Container>
     <Wrapper>
       <Image>
@@ -100,8 +100,8 @@ const CoopList = ({ path, cover, title, date, excerpt, tags }) => (
         <Link to={path}>
           <Title>{title}</Title>
         </Link>
-        <TagsBlock list={tags} />
-        {excerpt}
+        <p></p>
+        <p>{excerpt}</p>
       </Information>
     </Wrapper>
   </Container>
