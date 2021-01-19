@@ -58,7 +58,6 @@ const Image = styled.div`
 
 const Information = styled.div`
   h1 {
-    font-size: 3vw;
     display: inline;
     color: ${props => props.theme.colors.black.base};
     transition: all ${props => props.theme.transitions.default.duration};
@@ -74,6 +73,9 @@ const Information = styled.div`
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
+  }
+  @media (max-width: 480) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -95,7 +97,6 @@ const CoopList = ({ path, cover, title, date, excerpt, tags }) => (
         </Link>
       </Image>
       <Information>
-        <Date>{date}</Date>
         <Link to={path}>
           <Title>{title}</Title>
         </Link>

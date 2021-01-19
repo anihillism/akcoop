@@ -25,7 +25,7 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        Design By Adam Nihill. Power By Gatsby.
+        Facebook - <a href="https://www.facebook.com/Akcoopsirl" style={{color: 'black'}}>AK Coops Ireland</a>
       </span>
     </Text>
   </Wrapper>

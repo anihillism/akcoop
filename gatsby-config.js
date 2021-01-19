@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     ...config,
   },
+
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
