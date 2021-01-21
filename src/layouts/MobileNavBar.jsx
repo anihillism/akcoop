@@ -9,6 +9,7 @@ const StyledLink = styled(Link)`
     display: flex;
     font-weight: 700;
     align-items: center;
+    margin: auto;
     @media ${breakpoints.md} {
         display: none;
     }
@@ -23,7 +24,6 @@ const MobileNavMenu = () => {
                 <img src={logo} alt="AK Coops Logo" />
             </StyledLink>
             <MenuBar>
-                <div></div>
                 <MenuIconContainer menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
                     <MenuIcon menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
                         <div />
@@ -47,7 +47,7 @@ const MenuBar = styled.header`
     @media ${breakpoints.md} {
         display: none;
     }
-    height: 3rem;
+    height: auto;
     position: flex;
     justify-content: flex-end;
     width: 100%;
@@ -55,6 +55,7 @@ const MenuBar = styled.header`
     border-bottom: "white";
     display: flex;
     align-items: center;
+    margin-bottom: 1.5rem;
 `
 
 const MenuIconContainer = styled.div`
@@ -117,7 +118,7 @@ const MenuLinks = styled.nav`
             menuOpen ? "translateX(0)" : "translateX(100%)"};
     ul {
         width: 100%;
-        margin: 0;
+        margin: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -128,7 +129,6 @@ const MenuLinks = styled.nav`
     }
     a {
         color: white;
-        margin-left: 2rem;
         margin-bottom: 1.5rem;
         transition: all ${props => props.theme.transitions.default.duration};
         &:hover {

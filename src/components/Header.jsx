@@ -34,9 +34,12 @@ const Text = styled.div`
   text-align: center;
   width: 100%;
   max-width: ${props => props.theme.layout.base};
-  padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
+  @media (max-width: 480px){
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
 `;
 
 const Subtitle = styled.p`
