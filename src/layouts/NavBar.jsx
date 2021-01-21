@@ -11,6 +11,8 @@ const StyledLink = styled(Link)`
     display: flex;
     font-weight: 700;
     align-items: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -26,7 +28,7 @@ const Nav = styled.nav`
     a {
       color: ${props => props.theme.colors.white.base};
       margin-left: 2rem;
-      margin-bottom: 1.5rem;
+      margin-right: 2rem;
       transition: all ${props => props.theme.transitions.default.duration};
       &:hover {
         color: ${props => props.theme.colors.white.grey};

@@ -9,7 +9,8 @@ const StyledLink = styled(Link)`
     display: flex;
     font-weight: 700;
     align-items: center;
-    margin: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
     @media ${breakpoints.md} {
         display: none;
     }
@@ -73,6 +74,7 @@ const MenuIcon = styled.button`
     flex-direction: column;
     justify-content: space-around;
     height: 2rem;
+    margin-right: 2rem;
     outline: thin-dotted;
     z-index: 11;
     div {
