@@ -6,6 +6,7 @@ import 'typeface-open-sans';
 import 'typeface-candal';
 import { SEO } from 'components';
 import { NavBar, Footer } from 'layouts';
+import MobileNavMenu from "./MobileNavBar"
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
 
@@ -59,6 +60,7 @@ const Layout = ({ children }) => (
       />
       <SEO />
       <NavBar />
+      <MobileNavMenu />
       {children}
       <Footer />
     </Fragment>

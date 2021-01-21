@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 import logo from '../../static/logo/header-logo.png';
+import { breakpoints } from "../utils/breakpoints"
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -11,19 +12,22 @@ const StyledLink = styled(Link)`
 `;
 
 const Nav = styled.nav`
-  display: flex;
-  justify-content: flex-end;
-  font-family: ${props => props.theme.fontFamily.body};
-  font-weight: 500;
-  font-size: 1.1rem;
-  align-items: center;
-  a {
-    color: ${props => props.theme.colors.white.base};
-    margin-left: 2rem;
-    margin-bottom: 1.5rem;
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
-      color: ${props => props.theme.colors.white.grey};
+  display: none;
+  @media ${breakpoints.md} {
+    display: flex;
+    justify-content: flex-end;
+    font-family: ${props => props.theme.fontFamily.body};
+    font-weight: 500;
+    font-size: 1.1rem;
+    align-items: center;
+    a {
+      color: ${props => props.theme.colors.white.base};
+      margin-left: 2rem;
+      margin-bottom: 1.5rem;
+      transition: all ${props => props.theme.transitions.default.duration};
+      &:hover {
+        color: ${props => props.theme.colors.white.grey};
+      }
     }
   }
 `;
