@@ -6,9 +6,12 @@ import logo from '../../static/logo/header-logo.png';
 import { breakpoints } from "../utils/breakpoints"
 
 const StyledLink = styled(Link)`
-  display: flex;
-  font-weight: 700;
-  align-items: center;
+  display: none;
+  @media ${breakpoints.md} {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+  }
 `;
 
 const Nav = styled.nav`

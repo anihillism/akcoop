@@ -9,6 +9,9 @@ const StyledLink = styled(Link)`
     display: flex;
     font-weight: 700;
     align-items: center;
+    @media ${breakpoints.md} {
+        display: none;
+    }
 `;
 
 const MobileNavMenu = () => {
@@ -16,6 +19,9 @@ const MobileNavMenu = () => {
 
     return (
         <Headroom calcHeightOnResize disableInlineStyles>
+            <StyledLink to="/">
+                <img src={logo} alt="AK Coops Logo" />
+            </StyledLink>
             <MenuBar>
                 <div></div>
                 <MenuIconContainer menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
@@ -42,13 +48,12 @@ const MenuBar = styled.header`
         display: none;
     }
     height: 3rem;
-    position: fixed;
+    position: flex;
+    justify-content: flex-end;
     width: 100%;
     background: transparent;
     border-bottom: "white";
-    z-index: 10;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 `
 
@@ -67,7 +72,6 @@ const MenuIcon = styled.button`
     flex-direction: column;
     justify-content: space-around;
     height: 2rem;
-    width: 6rem;
     outline: thin-dotted;
     z-index: 11;
     div {
