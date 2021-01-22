@@ -5,11 +5,12 @@ import Headroom from 'react-headroom';
 import logo from '../../static/logo/header-logo.png';
 import { breakpoints } from "../utils/breakpoints"
 
+
 const StyledLink = styled(Link)`
     display: flex;
     font-weight: 700;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 1rem;
     @media ${breakpoints.md} {
         display: none;
     }
@@ -52,7 +53,7 @@ const MenuBar = styled.header`
     justify-content: flex-end;
     width: 100%;
     background: transparent;
-    border-bottom: "white";
+    border-bottom: white;
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
@@ -73,7 +74,7 @@ const MenuIcon = styled.button`
     flex-direction: column;
     justify-content: space-around;
     height: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     outline: thin-dotted;
     z-index: 11;
     div {

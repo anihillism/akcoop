@@ -13,7 +13,7 @@ const headroom = css`
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding-top: 1rem;
     svg {
       height: 2.5rem;
       g {
@@ -38,7 +38,7 @@ const headroom = css`
     position: fixed;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
-    background-color: ${theme.colors.white.light};
+    background: ${theme.gradient.rightToLeft};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {
