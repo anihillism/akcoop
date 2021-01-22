@@ -19,7 +19,7 @@ const StyledLink = styled(Link)`
 const Nav = styled.nav`
   display: none;
   @media ${breakpoints.md} {
-    display: flex;
+    display: inline;
     justify-content: flex-end;
     font-family: ${props => props.theme.fontFamily.body};
     font-weight: 500;

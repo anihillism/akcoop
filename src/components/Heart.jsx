@@ -11,7 +11,7 @@ const Heartshape = styled.div`
         content: "";
         position: absolute;
         top: 0;
-        width: 52px;
+        width: 50px;
         height: 80px;
         border-radius: 50px 50px 0 0;
         background: #921C4A;

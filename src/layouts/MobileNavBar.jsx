@@ -9,7 +9,7 @@ const StyledLink = styled(Link)`
     display: flex;
     font-weight: 700;
     align-items: center;
-    margin-top: 1rem;
+    margin-left: 2rem;
     @media ${breakpoints.md} {
         display: none;
     }

@@ -11,12 +11,12 @@ const Wrapper = styled.header`
     clip-path: polygon(100% 0, 0 0, 0 100%, 50% 80%, 100% 100%);
   }
   background: ${props => props.theme.gradient.rightToLeft};
-  height: 300px;
+  height: 375px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 300px;
+    height: 375px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 275px;
+    height: 300px;
   }
   position: relative;
   overflow: hidden;
@@ -34,12 +34,9 @@ const Text = styled.div`
   text-align: center;
   width: 100%;
   max-width: ${props => props.theme.layout.base};
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   align-items: center;
-  @media (max-width: 480px){
-    margin-top: 2rem;
-    margin-bottom: 0;
-  }
 `;
 
 
