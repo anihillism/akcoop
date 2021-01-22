@@ -10,6 +10,7 @@ import MobileNavMenu from "./MobileNavBar"
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
 
+
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Fragment>
@@ -55,7 +56,7 @@ const Layout = ({ children }) => (
             font-family: ${theme.fontFamily.heading};
           }
 
-          ${headroom}
+          ${headroom};
         `}
       />
       <SEO />

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import { Header, CoopList } from 'components';
+import { Header, CoopList, Heart } from 'components';
 import { Layout } from 'layouts';
 
 const Coop = ({ data }) => {
@@ -11,6 +11,7 @@ const Coop = ({ data }) => {
     <Layout>
       <Helmet title={'Coops'} />
       <Header title="Coops">A preview of what we offer</Header>
+      <Heart />
       {edges.map(({ node }) => (
         <CoopList
           key={node.id}

@@ -42,10 +42,13 @@ const Text = styled.div`
   }
 `;
 
+
 const Subtitle = styled.p`
   max-width: 650px;
   color: ${props => props.theme.colors.white.light};
 `;
+
+
 
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>

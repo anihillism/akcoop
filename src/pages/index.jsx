@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
-import { Header, PostList } from 'components';
+import { Header, PostList, Heart} from 'components';
 import { Layout } from 'layouts';
 
 const PostWrapper = styled.div`
@@ -26,6 +26,7 @@ const Index = ({ data }) => {
     <Layout>
       <Helmet title={'AKCoops'} />
       <Header title="AK Coops Ireland">Handcrafted Homes For All Our Feathered Friends </Header>
+      <Heart />
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

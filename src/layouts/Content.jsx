@@ -60,7 +60,9 @@ const Wrapper = styled.div`
 `;
 
 const Content = ({ input }) => (
-  <Wrapper dangerouslySetInnerHTML={{ __html: input }} />
+  <Wrapper dangerouslySetInnerHTML={{ __html: input }}>
+
+  </Wrapper>
 );
 
 export default Content;
