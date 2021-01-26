@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { TagsBlock } from 'components';
 import { Container } from 'layouts';
 
 const Wrapper = styled.article`

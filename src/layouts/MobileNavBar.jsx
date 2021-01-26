@@ -60,7 +60,7 @@ const MenuBar = styled.header`
     align-items: center;
     margin-bottom: 1.5rem;
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
 `
 
 const MenuIconContainer = styled.div`

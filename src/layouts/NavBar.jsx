@@ -22,7 +22,7 @@ const Nav = styled.nav`
   @media ${breakpoints.md} {
     display: flex;
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     background: transparent;
     margin-top: 3rem;
