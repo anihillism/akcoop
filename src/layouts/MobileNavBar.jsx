@@ -6,6 +6,7 @@ import { breakpoints } from "../utils/breakpoints";
 
 
 const Wrapper = styled.div`
+
     width: 100%;
     z-index: 1000;
     top: 0;
@@ -120,7 +121,7 @@ const MenuLinks = styled.nav`
     font-size: 4rem;
     display: flex;
     background: linear-gradient(45deg, #44a68c, #34806b);
-    position: absolute;
+    position: fixed;
     z-index: 5;
     top: 0;
     right: 0;
