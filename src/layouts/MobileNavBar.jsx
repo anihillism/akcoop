@@ -2,8 +2,10 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from '@emotion/styled';
 import logo from '../../static/logo/header-logo.jpg';
-import { breakpoints } from "../utils/breakpoints"
+import { breakpoints } from "../utils/breakpoints";
+import Headroom from 'react-headroom';
 
+const Navigation = styled.nav``
 
 const StyledLink = styled(Link)`
     display: flex;
@@ -23,7 +25,7 @@ const MobileNavMenu = () => {
     const [menuOpen, toggleMenuOpen] = useState(false)
 
     return (
-        <div calcHeightOnResize>
+        <>
             <StyledLink to="/">
                 <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", boxShadow: "10px 10px 10px #34806b" }} />
             </StyledLink>
@@ -41,7 +43,7 @@ const MobileNavMenu = () => {
                     <Link to="/about">About</Link>
                 </MenuLinks>
             </MenuBar>
-        </div>
+        </>
     )
 }
 
@@ -122,7 +124,7 @@ const MenuLinks = styled.nav`
     width: 100%;
     transition: transform 300ms;
     transform: ${({ menuOpen }) =>
-            menuOpen ? "translateX(0)" : "translateX(100%)"};
+        menuOpen ? "translateX(0)" : "translateX(100%)"};
     ul {
         width: 100%;
         margin: auto;
