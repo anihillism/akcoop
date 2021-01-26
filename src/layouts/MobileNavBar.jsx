@@ -3,10 +3,9 @@ import { Link } from "gatsby"
 import styled from '@emotion/styled';
 import logo from '../../static/logo/header-logo.jpg';
 import { breakpoints } from "../utils/breakpoints";
-import { css } from '@emotion/core';
+
 
 const Wrapper = styled.div`
-    position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
