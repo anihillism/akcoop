@@ -14,6 +14,7 @@ const StyledLink = styled(Link)`
     align-items: center;
     margin-top: 1rem;
     margin-left: 2rem;
+    width: 10%;
   }
 `;
 
@@ -46,7 +47,7 @@ const Nav = styled.nav`
 const NavBar = () => (
   <div>
     <StyledLink to="/">
-      <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", width: "40%", boxShadow: "10px 10px 10px #34806b"}}/>
+      <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", boxShadow: "10px 10px 10px #34806b"}}/>
     </StyledLink>
     <Nav>
       <Link to="/">Home</Link>

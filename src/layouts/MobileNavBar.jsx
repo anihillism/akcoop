@@ -11,7 +11,7 @@ const StyledLink = styled(Link)`
     align-items: center;
     margin-left: 1rem;
     margin-top: 1rem;
-    width: 20%;
+    width: 25%;
     position: absolute;
     z-index: 1000;
     @media ${breakpoints.md} {
