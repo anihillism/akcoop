@@ -1,8 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from '@emotion/styled';
-import Headroom from 'react-headroom';
-import logo from '../../static/logo/header-logo.png';
+import logo from '../../static/logo/header-logo.jpg';
 import { breakpoints } from "../utils/breakpoints"
 
 
@@ -11,6 +10,9 @@ const StyledLink = styled(Link)`
     font-weight: 700;
     align-items: center;
     margin-left: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    z-index: 1000;
     @media ${breakpoints.md} {
         display: none;
     }
@@ -20,9 +22,9 @@ const MobileNavMenu = () => {
     const [menuOpen, toggleMenuOpen] = useState(false)
 
     return (
-        <Headroom calcHeightOnResize disableInlineStyles>
+        <div>
             <StyledLink to="/">
-                <img src={logo} alt="AK Coops Logo" />
+                <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", width: "30%", boxShadow: "10px 10px 10px #34806b" }} />
             </StyledLink>
             <MenuBar>
                 <MenuIconContainer menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
@@ -38,7 +40,7 @@ const MobileNavMenu = () => {
                     <Link to="/about">About</Link>
                 </MenuLinks>
             </MenuBar>
-        </Headroom>
+        </div>
     )
 }
 
@@ -57,12 +59,15 @@ const MenuBar = styled.header`
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
+    position: absolute;
+    z-index: 1000;
 `
 
 const MenuIconContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 3rem;
 
 `
 

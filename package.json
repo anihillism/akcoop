@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.6.0",
+    "@browniebroke/gatsby-image-gallery": "^4.0.2",
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
     "babel-plugin-emotion": "^10.0.17",

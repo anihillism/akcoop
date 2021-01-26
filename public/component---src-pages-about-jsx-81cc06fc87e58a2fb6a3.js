@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{241:function(t,e,n){"use strict";n.r(e);var u=n(0),c=(n(1),n(121)),b=n.n(c),o=n(120),d=n(119);e.default=function(t){return Object(u.d)(d.d,null,Object(u.d)(b.a,{title:"About Page"}),Object(u.d)(o.b,{title:"About Page"},"Our Story"),Object(u.d)(o.c,null),Object(u.d)(d.a,{center:t},Object(u.d)("h3",null,"About us Honk Honk!")))}}}]);
+//# sourceMappingURL=component---src-pages-about-jsx-81cc06fc87e58a2fb6a3.js.map

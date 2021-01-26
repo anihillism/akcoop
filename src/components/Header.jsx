@@ -15,9 +15,6 @@ const Wrapper = styled.header`
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 375px;
   }
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 300px;
-  }
   position: relative;
   overflow: hidden;
 `;
@@ -37,6 +34,9 @@ const Text = styled.div`
   margin-top: 1rem;
   margin-bottom: 2rem;
   align-items: center;
+  @media (max-width: ${props => props.theme.breakpoints.s}){
+    margin-top: 2rem;
+  }
 `;
 
 

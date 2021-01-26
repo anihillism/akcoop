@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{237:function(t,e,n){"use strict";n.r(e);var a=n(0),c=(n(1),n(119)),d=n(120);e.default=function(t){var e=t.pageContext.tags;return Object(a.d)(c.d,null,Object(a.d)(d.b,{title:"Tags Page"},"AK Coops Ireland"),Object(a.d)(c.a,null,Object(a.d)(d.f,{list:e})))}}}]);
+//# sourceMappingURL=component---src-pages-tags-jsx-06c140b53a282804cf54.js.map
