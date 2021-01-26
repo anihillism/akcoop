@@ -3,9 +3,14 @@ import { Link } from "gatsby"
 import styled from '@emotion/styled';
 import logo from '../../static/logo/header-logo.jpg';
 import { breakpoints } from "../utils/breakpoints";
-import Headroom from 'react-headroom';
+import { css } from '@emotion/core';
 
-const Navigation = styled.nav``
+const Wrapper = styled.div`
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+`
 
 const StyledLink = styled(Link)`
     display: flex;
@@ -25,7 +30,7 @@ const MobileNavMenu = () => {
     const [menuOpen, toggleMenuOpen] = useState(false)
 
     return (
-        <>
+        <Wrapper>
             <StyledLink to="/">
                 <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", boxShadow: "10px 10px 10px #34806b" }} />
             </StyledLink>
@@ -43,7 +48,7 @@ const MobileNavMenu = () => {
                     <Link to="/about">About</Link>
                 </MenuLinks>
             </MenuBar>
-        </>
+        </Wrapper>
     )
 }
 
