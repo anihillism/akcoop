@@ -6,11 +6,12 @@ import { breakpoints } from "../utils/breakpoints"
 
 
 const StyledLink = styled(Link)`
-    display: flex;
+    display: inline-flex;
     font-weight: 700;
     align-items: center;
     margin-left: 1rem;
     margin-top: 1rem;
+    width: 20%;
     position: absolute;
     z-index: 1000;
     @media ${breakpoints.md} {
@@ -23,23 +24,26 @@ const MobileNavMenu = () => {
 
     return (
         <div>
-            <StyledLink to="/">
-                <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", width: "30%", boxShadow: "10px 10px 10px #34806b" }} />
-            </StyledLink>
-            <MenuBar>
-                <MenuIconContainer menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
-                    <MenuIcon menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
-                        <div />
-                        <div />
-                        <div />
-                    </MenuIcon>
-                </MenuIconContainer>
-                <MenuLinks menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
-                    <Link to="/">Home</Link>
-                    <Link to="/coop">Coops</Link>
-                    <Link to="/about">About</Link>
-                </MenuLinks>
-            </MenuBar>
+
+            <div>
+                <StyledLink to="/">
+                    <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", boxShadow: "10px 10px 10px #34806b" }} />
+                </StyledLink>
+                <MenuBar>
+                    <MenuIconContainer menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
+                        <MenuIcon menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
+                            <div />
+                            <div />
+                            <div />
+                        </MenuIcon>
+                    </MenuIconContainer>
+                    <MenuLinks menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
+                        <Link to="/">Home</Link>
+                        <Link to="/coop">Coops</Link>
+                        <Link to="/about">About</Link>
+                    </MenuLinks>
+                </MenuBar>
+            </div>
         </div>
     )
 }
@@ -60,7 +64,7 @@ const MenuBar = styled.header`
     align-items: center;
     margin-bottom: 1.5rem;
     position: absolute;
-    z-index: 100;
+    z-index: 900;
 `
 
 const MenuIconContainer = styled.div`
@@ -81,7 +85,7 @@ const MenuIcon = styled.button`
     height: 2rem;
     margin-right: 1rem;
     outline: thin-dotted;
-    z-index: 11;
+    z-index: 1000;
     div {
         width: 2rem;
         height: 0.25rem;
