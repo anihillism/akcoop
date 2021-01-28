@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 import logo from '../../static/logo/header-logo.jpg';
 import { breakpoints } from "../utils/breakpoints"
 
-const Navigation = styled.nav``
 
 const StyledLink = styled(Link)`
   display: none;
@@ -47,7 +46,7 @@ const Nav = styled.nav`
 `;
 
 const NavBar = () => (
-  <Navigation>
+  <div>
     <StyledLink to="/">
       <img src={logo} alt="AK Coops Logo" style={{ borderRadius: "50%", boxShadow: "10px 10px 10px #34806b"}}/>
     </StyledLink>
@@ -56,7 +55,7 @@ const NavBar = () => (
       <Link to="/coop">Coops</Link>
       <Link to="/about">About</Link>
     </Nav>
-  </Navigation>
+  </div>
 );
 
 export default NavBar;

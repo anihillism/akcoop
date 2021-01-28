@@ -6,7 +6,6 @@ import { breakpoints } from "../utils/breakpoints";
 
 
 const Wrapper = styled.div`
-
     width: 100%;
     z-index: 1000;
     top: 0;

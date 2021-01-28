@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import Chook  from '../components/Chook';
 
 const Wrapper = styled.footer`
   position: relative;
@@ -25,6 +26,7 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <span>
+        <Chook />
         Facebook - <a href="https://www.facebook.com/Akcoopsirl" style={{color: 'black'}}>AK Coops Ireland</a>
       </span>
     </Text>
