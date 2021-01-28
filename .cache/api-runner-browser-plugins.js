@@ -5,6 +5,9 @@ module.exports = [{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-remark-images/gatsby-browser.js'),
       options: {"plugins":[],"maxWidth":750,"quality":90,"linkImagesToOriginal":true},
     },{
+      plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-remark-images/gatsby-browser.js'),
+      options: {"plugins":[],"maxWidth":300,"wrapperStyle":"margin:2rem;"},
+    },{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-plugin-typography/gatsby-browser.js'),
       options: {"plugins":[],"pathToConfigModule":"config/typography.js"},
     },{

@@ -2,9 +2,6 @@ var plugins = [{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-remark-images/gatsby-ssr'),
-      options: {"plugins":[],"maxWidth":750,"quality":90,"linkImagesToOriginal":true},
-    },{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"config/typography.js"},
     },{

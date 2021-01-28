@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const Wrapper = styled.div`
   position: relative;
   height: 30vh;
-  margin: 0;
+  margin: 2rem;
 
 `
 

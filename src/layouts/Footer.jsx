@@ -11,7 +11,7 @@ const Wrapper = styled.footer`
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    padding-top: 7rem;
+    padding-top: 2rem;
   }
 `;
 
@@ -27,7 +27,7 @@ const Footer = () => (
     <Text>
       <span>
         <Chook />
-        Facebook - <a href="https://www.facebook.com/Akcoopsirl" style={{color: 'black'}}>AK Coops Ireland</a>
+        <a href="https://www.facebook.com/Akcoopsirl" style={{color: 'black'}}>Facebook</a>
       </span>
     </Text>
   </Wrapper>
