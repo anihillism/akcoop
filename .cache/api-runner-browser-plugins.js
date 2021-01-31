@@ -3,7 +3,10 @@ module.exports = [{
       options: {"plugins":[]},
     },{
       plugin: require('../node_modules/gatsby-remark-images/gatsby-browser.js'),
-      options: {"plugins":[],"maxWidth":750,"quality":90,"linkImagesToOriginal":true,"showCaptions":false,"markdownCaptions":false,"sizeByPixelDensity":false,"backgroundColor":"white","withWebp":false,"tracedSVG":false,"loading":"lazy","disableBgImageOnAlpha":false,"disableBgImage":false},
+      options: {"plugins":[],"maxWidth":300,"maxHeight":300,"quality":90,"linkImagesToOriginal":false,"wrapperStyle":"margin: 1rem;"},
+    },{
+      plugin: require('../node_modules/gatsby-remark-images-medium-zoom/gatsby-browser.js'),
+      options: {"plugins":[],"background":"transparent"},
     },{
       plugin: require('../node_modules/gatsby-plugin-typography/gatsby-browser.js'),
       options: {"plugins":[],"pathToConfigModule":"config/typography.js"},

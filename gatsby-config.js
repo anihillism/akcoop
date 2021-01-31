@@ -23,9 +23,17 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 750,
+              maxWidth: 300,
+              maxHeight: 300,
               quality: 90,
-              linkImagesToOriginal: true,
+              linkImagesToOriginal: false,
+              wrapperStyle: 'margin: 1rem;',
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {
+              background: 'transparent', 
             },
           },
           'gatsby-remark-prismjs',
@@ -62,5 +70,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/content/posts`,
+      },
+    },
   ],
 };
