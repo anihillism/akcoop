@@ -32,22 +32,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 300,
-              wrapperStyle: 'margin:2rem;',
-              showCaptions: True
-            },
-          },
-        ],
-      },
-    },
     {
       resolve: 'gatsby-plugin-emotion',
       options: {

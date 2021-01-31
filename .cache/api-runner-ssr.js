@@ -6,10 +6,10 @@ var plugins = [{
       options: {"plugins":[],"pathToConfigModule":"config/typography.js"},
     },{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     },{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"AK Coops Ireland","short_name":"GatsbyTut","description":"Handcrafted homes for all of our feathered friends.","start_url":"/","background_color":"#d3e0ff","theme_color":"#3e7bf2","display":"standalone","icon":"static/logo/favicon.png"},
+      options: {"plugins":[],"name":"AK Coops Ireland","short_name":"GatsbyTut","description":"Handcrafted homes for all of our feathered friends.","start_url":"/","background_color":"#d3e0ff","theme_color":"#3e7bf2","display":"standalone","icon":"static/logo/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"61d972df7c7c6ca5e58cf4c28cf01832"},
     },{
       plugin: require('/Users/adamnihill/Documents/websites/akcoop/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},

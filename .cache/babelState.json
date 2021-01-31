@@ -1,7 +1,24 @@
 {
   "stages": {
     "develop": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
@@ -9,7 +26,17 @@
             "sourceMap": true,
             "autoLabel": true,
             "plugins": [],
-            "labelFormat": "[filename]--[local]"
+            "labelFormat": "[filename]--[local]",
+            "cssPropOptimization": true
+          }
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -19,7 +46,24 @@
       }
     },
     "develop-html": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
@@ -27,7 +71,17 @@
             "sourceMap": true,
             "autoLabel": true,
             "plugins": [],
-            "labelFormat": "[filename]--[local]"
+            "labelFormat": "[filename]--[local]",
+            "cssPropOptimization": true
+          }
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -37,7 +91,24 @@
       }
     },
     "build-html": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
@@ -45,7 +116,17 @@
             "sourceMap": true,
             "autoLabel": true,
             "plugins": [],
-            "labelFormat": "[filename]--[local]"
+            "labelFormat": "[filename]--[local]",
+            "cssPropOptimization": true
+          }
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -55,7 +136,24 @@
       }
     },
     "build-javascript": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
@@ -63,7 +161,17 @@
             "sourceMap": true,
             "autoLabel": true,
             "plugins": [],
-            "labelFormat": "[filename]--[local]"
+            "labelFormat": "[filename]--[local]",
+            "cssPropOptimization": true
+          }
+        },
+        {
+          "name": "/Users/adamnihill/Documents/websites/akcoop/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
